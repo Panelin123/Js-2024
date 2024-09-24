@@ -41,4 +41,23 @@ console.log(typeof varnull);
 console.log(typeof numero);
 console.log(typeof string)
 
+//conversão implicita
 
+const numeroNumber = 786
+const numeroString = "786"
+
+console.log(numeroNumber == numeroString) //comparando os valores
+console.log(numeroNumber === numeroString) //comparando os tipos
+console.log(numeroNumber + numeroString) // Conversão implícita (concatenação de string)
+
+//conversão explicita
+
+console.log(numeroNumber + Number(numeroString))
+
+const numeroConvertido = Number(numeroString)
+
+console.log(numeroNumber + numeroConvertido)
+
+const numeroConvertidoErrado = Number("456b")
+
+console.log(numeroNumber + numeroConvertidoErrado)
